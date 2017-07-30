@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Angular JS</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	    <link rel="stylesheet" href="style/style.css">
+
+	</head>
+
+
+
+	<body>
+
+		<div ng-app="app"   ng-controller="MyCtrl">
+		   <a href="#" ng-click="muda()" ng-class="{'active' : lampStatus}"  ng-hide="!lampStatus" ><img src="img/lampada-acesa.jpg"></a>
+
+		  <img src="img/lampada-apagada.jpg" ng-show="!lampStatus">
+		  
+	    </div>
+
+
+		<script src="js/apagalamp.js"> </script>
+
+	</body>
+
+</html>
+
+</html>

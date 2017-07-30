@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Angular JS </title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script> 
+	    <link rel="stylesheet" href="style/style.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style>
+
+			.form-group  {
+				width: 800px;
+
+			}
+			
+			.container {
+				
+				margin-top: 100px;
+			}
+
+
+
+		</style>
+	</head>
+
+
+
+	<body>
+
+		<div  class="container" ng-app="MyApp" ng-controller="MyCrtl">
+
+				<div class="form-group">
+						<p> Digite uma palavra ou texto: </p>
+         				<textarea name="msg" placeholder="Mensagem" class="form-control textarea" required="" ng-model="palavra">  </textarea>
+       			 </div>
+
+	
+        		<div class="form-group">
+        				<p> Palavra ou texto invertido: </p>
+                        <textarea name="msg" placeholder="Mensagem" class="form-control textarea" required="" ng-model="InvertePalavra(palavra)"></textarea>
+                </div>
+		</div>
+	</body>
+
+	<script src="js/invertepalavra.js"> </script>
+
+		
+	</body>
+
+</html>
+
+</html>
